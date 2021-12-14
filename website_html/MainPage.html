@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<!--we can put inside <style></style> things from css file-->
+<style>
+
+</style>
+
+
+<head>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../website_css/MainPage.css">
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>AccuWeather</h1>
+
+        <h4 class="header">Only here you can find the most accurate weather forecast for any part of the world</h4>
+
+    </header>
+
+    <main>
+
+            <input id="input" type="text">
+
+
+            <input class="chooseBtn" name="btn" id="today" type="radio">
+            <label for="today">today</label>
+
+
+            <input class="chooseBtn" name="btn" id="3days" type="radio">
+            <label for="3days">3 days</label>
+
+            <button id="button" type="button">Search</button>
+
+
+            <!--<section>Click on ... to get forecast in your current location </section>-->
+        <!--<a class="location" href="CurrentLocation.html">Current location
+                <img class="curLocation" width="280" height="158" src="../image/curLocation.jpeg" alt="Current location"></a>-->
+
+        <!--<a class="location" href="ResultWindow.html">Choose location</a>
+            <img class="chooseLocation" width="284" height="160" src="../image/Planet.jpeg" alt="Choose location"></a>-->
+
+    </main>
+
+    <footer>
+        <div>
+            <h6 id="contact">Contact Us</h6>
+        </div>
+
+        <div>
+            <input class="contact_info" type="text" value="Full Name">
+        </div>
+        <div>
+            <input class="contact_info" type="email" value="Email">
+        </div>
+        <div>
+            <textarea id="text" rows="5" cols="16">Text</textarea>
+        </div>
+
+        <div>
+
+            <button id="submit" type="button">Submit</button>
+        </div>
+
+    </footer>
+
+    <script src="../MainPage.js"></script>
+
+</body>
+</html>
