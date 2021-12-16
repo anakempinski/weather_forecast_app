@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from db_file import search_in_db, insert_to_db, search_3days, insert_3days
+from app_backend.db_file import search_3days, insert_3days
 
 # RUN SERVER
 # curl GET http://localhost:5000/forecast/3_days/London
@@ -9,10 +9,7 @@ from db_file import search_in_db, insert_to_db, search_3days, insert_3days
 # it's a tool to work with db in python
 from flask_sqlalchemy import SQLAlchemy
 
-from datetime import datetime
 import requests
-import pprint      # prints json in a readable way
-
 
 # entity of Flask class
 app = Flask(__name__)
@@ -206,9 +203,6 @@ def getForecastFor3Days(city):
         if response.status_code == 200:
             return parse3DaysForecast(response.json())
         return "ERROR"
-
-
-
 
 
 
